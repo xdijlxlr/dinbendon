@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		String key = "";
+		String key = "key";
 		http.authorizeRequests()
 		.antMatchers("/managers").hasRole("MANAGERS")
 		.antMatchers("/employees").hasRole("EMPLOYEES")
