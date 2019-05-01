@@ -4,6 +4,9 @@ plugins {
 	id 'war'
 	id "org.sonarqube" version "2.7"
 }
+war {
+	archiveName 'dinbendon.war'
+}
 apply plugin: 'io.spring.dependency-management'
 group = 'com'
 sourceCompatibility = '1.8'
